@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Konfigurasi awal
-WALLET="ISI_DOMPET_ANDA"
+WALLET="0x440aF1B7BE0e5948F6700f22F42B6a62E39215aE"
 WORKER="Worker01"
 POOL="a"  # Pilihan: a, b, atau c
 CORES=(0 1 2)
