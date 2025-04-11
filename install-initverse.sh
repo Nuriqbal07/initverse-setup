@@ -3,7 +3,7 @@
 # Konfigurasi awal
 WALLET="0x440aF1B7BE0e5948F6700f22F42B6a62E39215aE"
 WORKER="Worker01"
-POOL="a"  # Pilihan: a, b, atau c
+POOL="b"  # Pilihan: a, b, atau c
 CORES=(0 1 2)
 
 # Direktori install
@@ -22,7 +22,7 @@ chmod +x iniminer
 # Buat script mining
 cat > start.sh <<EOF
 #!/bin/bash
-./iniminer --pool stratum+tcp://$WALLET.$WORKER@pool-$POOL.yatespool.com:31588 \
+./iniminer --pool stratum+tcp://$WALLET.$WORKER@pool-$POOL.yatespool.com:32488 \
 $(for core in "${CORES[@]}"; do echo -n "--cpu-devices $core "; done)
 EOF
 
